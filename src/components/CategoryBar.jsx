@@ -65,7 +65,7 @@ export default function CategoryBar() {
               />
             </div>
 
-            {/* Text */}
+            {/* Text */}    
             <div className="flex items-center gap-1 mt-1">
               <span className="whitespace-nowrap">{cat.name}</span>
               {cat.dropdown && (

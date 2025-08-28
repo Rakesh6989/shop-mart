@@ -33,14 +33,11 @@ const NAV_ITEMS = [
     hideTextOnMobile: true,
   },
 ];
-
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-white shadow-lg mb-5 sticky top-0 z-50">
       <header className="Container-Div mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 gap-4">
-        {/* Logo */}
         <div className="flex items-center flex-shrink-0 mr-5">
           <Image
             src="/fliplogo.svg"
@@ -50,7 +47,6 @@ export default function Header() {
             className="h-7 w-auto sm:h-8 cursor-pointer"
           />
         </div>
-
         <div className="flex-1 hidden sm:flex items-center">
           <div className="flex w-full items-center bg-blue-50 rounded-md border border-gray-200 px-3 py-2">
             <Search className="h-6 w-6 text-gray-500" />
@@ -61,7 +57,6 @@ export default function Header() {
             />
           </div>
         </div>
-
         <div className="hidden md:flex items-center gap-8 ml-5 text-sm font-medium">
           {NAV_ITEMS.map(({ label, icon: Icon, hideTextOnMobile }, idx) => (
             <button
@@ -97,7 +92,6 @@ export default function Header() {
           />
         </div>
       </div>
-
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200 shadow-lg px-4 py-4 space-y-3">
           {NAV_ITEMS.map(({ label, icon: Icon, hideTextOnMobile }, idx) => (

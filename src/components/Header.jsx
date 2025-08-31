@@ -44,8 +44,10 @@ export default function Header() {
             alt="Flipkart"
             width={140}
             height={30}
-            className="h-7 w-auto sm:h-8 cursor-pointer"
+            priority  
+            className="cursor-pointer"
           />
+
         </div>
         <div className="flex-1 hidden sm:flex items-center">
           <div className="flex w-full items-center bg-blue-50 rounded-md border border-gray-200 px-3 py-2">
